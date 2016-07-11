@@ -14,6 +14,9 @@ environment:
   # We set a default Python version for the miniconda that is to be installed. This can be
   # overridden in the matrix definition where appropriate.
   CONDA_PY: "27"
+  BINSTAR_TOKEN:
+    # The BINSTAR_TOKEN secure variable. This is defined canonically in conda-forge.yml.
+    secure: /XxwAsgp0EItmAhoPSov/h0BtAFNj2BuuEqnhgaP9l7Rw2yLBM1lD+3q4LvpVm3B
 
   matrix:
     - TARGET_ARCH: x86
