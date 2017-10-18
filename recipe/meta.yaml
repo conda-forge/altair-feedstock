@@ -1,5 +1,5 @@
 # Jinja variables help maintain the recipe as you'll update the version only here.
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
     name: altair
@@ -8,9 +8,10 @@ package:
 source:
     fn: altair-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
-    md5: ae58f1d13d2c9411730520074c1fe5ea
+    md5: be6f597785b99be09051c0ca2f4d4bd1
 
 build:
+    noarch: python
     number: 0
     script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -21,7 +22,7 @@ requirements:
     run:
         - python
         - pandas
-        - vega >=0.4.4
+        - vega 0.4.4
         - traitlets >=4.3.1
 
 test:
@@ -33,7 +34,7 @@ test:
         - altair.examples
 
 about:
-    home: http://github.com/ellisonbg/altair
+    home: http://github.com/altair-viz/altair
     license: BSD 3-clause
     summary: 'High-level declarative visualization library for Python.'
 
