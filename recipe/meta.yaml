@@ -11,6 +11,7 @@ source:
     md5: be6f597785b99be09051c0ca2f4d4bd1
 
 build:
+    noarch: python
     number: 0
     script: python setup.py install --single-version-externally-managed --record record.txt
 
