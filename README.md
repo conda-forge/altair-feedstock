@@ -14,12 +14,15 @@ Summary: High-level declarative visualization library for Python.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/altair-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/altair-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/altair-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/altair-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/altair/badges/version.svg)](https://anaconda.org/conda-forge/altair)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/altair/badges/downloads.svg)](https://anaconda.org/conda-forge/altair)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-altair-green.svg)](https://anaconda.org/conda-forge/altair) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/altair.svg)](https://anaconda.org/conda-forge/altair) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/altair.svg)](https://anaconda.org/conda-forge/altair) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/altair.svg)](https://anaconda.org/conda-forge/altair) |
 
 Installing altair
 =================
