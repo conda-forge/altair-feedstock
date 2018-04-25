@@ -1,44 +1,43 @@
-# Jinja variables help maintain the recipe as you'll update the version only here.
 {% set version = "1.2.1" %}
 
 package:
-    name: altair
-    version: {{ version }}
+  name: altair
+  version: {{ version }}
 
 source:
-    fn: altair-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
-    md5: be6f597785b99be09051c0ca2f4d4bd1
+  url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
+  sha256: c1303f77f1ba4d632f2958c83c0f457b2b969860b1ac9adfb872aefa1780baa7
 
 build:
-    noarch: python
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - pandas
-        - vega 0.4.4
-        - traitlets >=4.3.1
+  build:
+    - python
+    - pip
+  run:
+    - python
+    - pandas
+    - vega 0.4.4
+    - traitlets >=4.3.1
 
 test:
-    requires:
-        - pytest
-    imports:
-        - altair
-        - altair.datasets
-        - altair.examples
+  requires:
+    - pytest
+  imports:
+    - altair
+    - altair.datasets
+    - altair.examples
 
 about:
-    home: http://github.com/altair-viz/altair
-    license: BSD 3-clause
-    summary: 'High-level declarative visualization library for Python.'
+  home: http://github.com/altair-viz/altair
+  license: BSD 3-clause
+  license_file: LICENSE
+  summary: 'High-level declarative visualization library for Python.'
 
 extra:
-    recipe-maintainers:
-        - ellisonbg
-        - jakevdp
+  recipe-maintainers:
+    - ellisonbg
+    - jakevdp
