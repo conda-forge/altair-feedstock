@@ -1,15 +1,15 @@
-{% set version = "1.2.1" %}
+{% set version = "2.0.0rc2" %}
 
 package:
   name: altair
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
-  sha256: c1303f77f1ba4d632f2958c83c0f457b2b969860b1ac9adfb872aefa1780baa7
+  url: https://github.com/altair-viz/altair/archive/v{{ version }}.tar.gz
+  sha256: 27a6915ad505e786888af83af685ede5eb77037ad2c4ae5d66bed8cf51138497
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
@@ -18,18 +18,43 @@ requirements:
     - python
     - pip
   run:
-    - python
+    - entrypoints
+    - ipython
+    - jsonschema
+    - numpy
     - pandas
-    - vega 0.4.4
-    - traitlets >=4.3.1
+    - python 
+    - six
+    - toolz
+    - typing
 
 test:
+  source_files:
+    - altair
   requires:
+    - docutils
+    - jinja2
     - pytest
+    - sphinx
+    - vega_datasets
+  commands:
+    - python -m pytest --pyargs --doctest-modules altair
   imports:
     - altair
-    - altair.datasets
-    - altair.examples
+    - altair.expr
+    - altair.sphinxext
+    - altair.utils
+    - altair.vega
+    - altair.vega.v2
+    - altair.vega.v2.schema
+    - altair.vega.v3
+    - altair.vega.v3.schema
+    - altair.vegalite
+    - altair.vegalite.v1
+    - altair.vegalite.v1.schema
+    - altair.vegalite.v2
+    - altair.vegalite.v2.examples
+    - altair.vegalite.v2.schema
 
 about:
   home: http://github.com/altair-viz/altair
