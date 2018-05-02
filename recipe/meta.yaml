@@ -1,4 +1,4 @@
-{% set version = "2.0.0rc2" %}
+{% set version = "2.0.0" %}
 
 package:
   name: altair
@@ -6,9 +6,9 @@ package:
 
 source:
   url: https://github.com/altair-viz/altair/archive/v{{ version }}.tar.gz
-  sha256: 27a6915ad505e786888af83af685ede5eb77037ad2c4ae5d66bed8cf51138497
+  sha256: 52d4168fc8da270048a231ac0ddbc5a14063ee97c6676fc3e45eec3621429ed3
 
-build:
+build:2
   number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
@@ -19,11 +19,10 @@ requirements:
     - pip
   run:
     - entrypoints
-    - ipython
     - jsonschema
     - numpy
     - pandas
-    - python 
+    - python
     - six
     - toolz
     - typing
