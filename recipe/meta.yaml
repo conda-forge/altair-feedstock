@@ -8,6 +8,7 @@ source:
   url: https://github.com/altair-viz/altair/archive/v{{ version }}.tar.gz
   sha256: 52d4168fc8da270048a231ac0ddbc5a14063ee97c6676fc3e45eec3621429ed3
 
+build:
   number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
