@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/altair-viz/altair/archive/v{{ version }}.tar.gz
-  sha256: 52d4168fc8da270048a231ac0ddbc5a14063ee97c6676fc3e45eec3621429ed3
+  sha256: bd60cfd6641e11bff2e0a8092fd2ff396943cbbd50ceed99e84ff28bc00720f5
 
 build:
   number: 0
