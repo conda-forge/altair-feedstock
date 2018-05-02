@@ -1,4 +1,4 @@
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 package:
   name: altair
@@ -18,11 +18,12 @@ requirements:
     - python
     - pip
   run:
+    - python
     - entrypoints
+    - ipython
     - jsonschema
     - numpy
     - pandas
-    - python
     - six
     - toolz
     - typing
