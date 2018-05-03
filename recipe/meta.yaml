@@ -1,4 +1,4 @@
-{% set version = "1.2.1" %}
+{% set version = "2.0.1" %}
 
 package:
   name: altair
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
-  sha256: c1303f77f1ba4d632f2958c83c0f457b2b969860b1ac9adfb872aefa1780baa7
+  sha256: a5ec9878cbfd7e934bc95becb6a50edbbabb93614e7c59ff199b66db856c676e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
