@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
@@ -20,6 +20,7 @@ requirements:
   run:
     - python
     - entrypoints
+    - ipython
     - jsonschema
     - numpy
     - pandas
@@ -31,10 +32,10 @@ test:
   source_files:
     - altair
   requires:
-    - docutils
-    - jinja2
     - pytest
+    - jinja2
     - sphinx
+    - docutils
     - vega_datasets
     - recommonmark
     - ipython
