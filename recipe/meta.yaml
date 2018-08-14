@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: altair
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
-  sha256: e8b222588dde98ec614e6808357fde7fa321118db44cc909df2bf30158d931c0
+  sha256: eb593d296e0e737749a662760a8d704fb2602e38bae84a857e4c5950a76d4290
 
 build:
   number: 0
