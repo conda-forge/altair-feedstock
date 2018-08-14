@@ -20,7 +20,6 @@ requirements:
   run:
     - python
     - entrypoints
-    - ipython
     - jsonschema
     - numpy
     - pandas
@@ -37,6 +36,7 @@ test:
     - pytest
     - sphinx
     - vega_datasets
+    - recommonmark
   commands:
     - python -m pytest --pyargs --doctest-modules altair
   imports:
