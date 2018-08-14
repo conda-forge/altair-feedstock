@@ -37,6 +37,7 @@ test:
     - sphinx
     - vega_datasets
     - recommonmark
+    - ipython
   commands:
     - python -m pytest --pyargs --doctest-modules altair
   imports:
