@@ -9,8 +9,7 @@ source:
   sha256: c158699026eb5a19f95c1ca742e2e82bc20c27013ef5785f10836283e2233f8a
 
 build:
-  number: 0
-  noarch: python
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -20,13 +19,12 @@ requirements:
   run:
     - python
     - entrypoints
-    - ipython
     - jsonschema
     - numpy
     - pandas
     - six
     - toolz
-    - typing
+    - typing  # [py<36]
 
 test:
   source_files:
@@ -62,7 +60,7 @@ about:
   home: http://github.com/altair-viz/altair
   license: BSD 3-clause
   license_file: LICENSE
-  summary: 'High-level declarative visualization library for Python.'
+  summary: 'High-level declarative visualization library for Python'
 
 extra:
   recipe-maintainers:

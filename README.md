@@ -7,15 +7,16 @@ Package license: BSD 3-clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: High-level declarative visualization library for Python.
+Summary: High-level declarative visualization library for Python
 
 
 
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/altair-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/altair-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/altair-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/altair-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/altair-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/altair-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/altair-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/altair-feedstock/branch/master)
 
 Current release info
 ====================
