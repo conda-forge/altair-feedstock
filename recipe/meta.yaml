@@ -53,7 +53,6 @@ test:
     - altair.vegalite.v1
     - altair.vegalite.v1.schema
     - altair.vegalite.v2
-    - altair.vegalite.v2.examples
     - altair.vegalite.v2.schema
 
 about:
