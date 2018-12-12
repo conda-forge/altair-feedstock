@@ -9,7 +9,7 @@ source:
   sha256: 9f4bc7cd132c0005deb6b36c7041ee213a69bbdfcd8c0b1a9f1ae8c1fba733f6
 
 build:
-  number: 1001
+  number: 1002
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -26,6 +26,9 @@ requirements:
     - six
     - toolz
     - typing  # [py<36]
+  run_constrained:
+    - vega >= 1.4
+    - jupyterlab >= 0.35
 
 test:
   source_files:
@@ -41,6 +44,7 @@ test:
     - python -m pytest --pyargs --doctest-modules altair
   imports:
     - altair
+    - altair.examples
     - altair.expr
     - altair.sphinxext
     - altair.utils
