@@ -1,4 +1,4 @@
-{% set version = "2.3.0" %}
+{% set version = "2.4.1" %}
 
 package:
   name: altair
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
-  sha256: 9f4bc7cd132c0005deb6b36c7041ee213a69bbdfcd8c0b1a9f1ae8c1fba733f6
+  sha256: ec62eb75df5adb619b9651dbefbdc130e37004508c7ca48da21863100ab114d3
 
 build:
-  number: 1002
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - pandas
     - six
     - toolz
-    - typing  # [py<36]
+    - typing >=3.6  # [py<35]
   run_constrained:
     - vega >= 1.4
     - jupyterlab >= 0.35
