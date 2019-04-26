@@ -41,19 +41,23 @@ test:
     - python -m pytest --pyargs --doctest-modules altair
   imports:
     - altair
+    - altair.examples
     - altair.expr
     - altair.sphinxext
+    - altair.tests
     - altair.utils
     - altair.vega
-    - altair.vega.v2
-    - altair.vega.v2.schema
     - altair.vega.v3
     - altair.vega.v3.schema
+    - altair.vega.v4
+    - altair.vega.v4.schema
+    - altair.vega.v5
+    - altair.vega.v5.schema
     - altair.vegalite
-    - altair.vegalite.v1
-    - altair.vegalite.v1.schema
     - altair.vegalite.v2
     - altair.vegalite.v2.schema
+    - altair.vegalite.v3
+    - altair.vegalite.v3.schema
 
 about:
   home: http://github.com/altair-viz/altair
