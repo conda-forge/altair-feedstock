@@ -1,4 +1,4 @@
-{% set version = "2.4.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: altair
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
-  sha256: ec62eb75df5adb619b9651dbefbdc130e37004508c7ca48da21863100ab114d3
+  sha256: 446cc19c55e321a5779196e6d19d304ac4c8a81c00350e1bb2541b157ba89f74
 
 build:
   number: 0
@@ -41,23 +41,27 @@ test:
     - python -m pytest --pyargs --doctest-modules altair
   imports:
     - altair
+    - altair.examples
     - altair.expr
     - altair.sphinxext
+    - altair.tests
     - altair.utils
     - altair.vega
-    - altair.vega.v2
-    - altair.vega.v2.schema
     - altair.vega.v3
     - altair.vega.v3.schema
+    - altair.vega.v4
+    - altair.vega.v4.schema
+    - altair.vega.v5
+    - altair.vega.v5.schema
     - altair.vegalite
-    - altair.vegalite.v1
-    - altair.vegalite.v1.schema
     - altair.vegalite.v2
     - altair.vegalite.v2.schema
+    - altair.vegalite.v3
+    - altair.vegalite.v3.schema
 
 about:
   home: http://github.com/altair-viz/altair
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: 'High-level declarative visualization library for Python'
 
