@@ -44,11 +44,8 @@ test:
     - altair.examples
     - altair.expr
     - altair.sphinxext
-    - altair.tests
     - altair.utils
     - altair.vega
-    - altair.vega.v3
-    - altair.vega.v3.schema
     - altair.vega.v4
     - altair.vega.v4.schema
     - altair.vega.v5
@@ -60,10 +57,10 @@ test:
     - altair.vegalite.v3.schema
 
 about:
-  home: http://github.com/altair-viz/altair
+  home: http://altair-viz.github.io
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: 'High-level declarative visualization library for Python'
+  summary: 'Altair: A declarative statistical visualization library for Python'
 
 extra:
   recipe-maintainers:
