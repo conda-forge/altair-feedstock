@@ -1,4 +1,4 @@
-{% set version = "3.0.1" %}
+{% set version = "3.1.0" %}
 
 package:
   name: altair
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
-  sha256: 63934563a7a7b7186335858206a0b9be6043163b8b54a26cd3b3299a9e5e391f
+  sha256: 77bf6baee04135cc37a20edd07820163336e2d2bb240804473e80dbefcb4bffd
 
 build:
   number: 0
@@ -44,11 +44,8 @@ test:
     - altair.examples
     - altair.expr
     - altair.sphinxext
-    - altair.tests
     - altair.utils
     - altair.vega
-    - altair.vega.v3
-    - altair.vega.v3.schema
     - altair.vega.v4
     - altair.vega.v4.schema
     - altair.vega.v5
@@ -60,10 +57,10 @@ test:
     - altair.vegalite.v3.schema
 
 about:
-  home: http://github.com/altair-viz/altair
+  home: http://altair-viz.github.io
   license: BSD-3-Clause
   license_file: LICENSE
-  summary: 'High-level declarative visualization library for Python'
+  summary: 'Altair: A declarative statistical visualization library for Python'
 
 extra:
   recipe-maintainers:
