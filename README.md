@@ -1,13 +1,13 @@
 About altair
 ============
 
-Home: http://github.com/altair-viz/altair
+Home: http://altair-viz.github.io
 
 Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: High-level declarative visualization library for Python
+Summary: Altair: A declarative statistical visualization library for Python
 
 
 
