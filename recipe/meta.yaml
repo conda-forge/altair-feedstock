@@ -9,20 +9,20 @@ source:
   sha256: 3edd30d4f4bb0a37278b72578e7e60bc72045a8e6704179e2f4738e35bc12931
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - entrypoints
     - jinja2
     - jsonschema
-    - numpy
+    - numpy >=0.18
     - pandas
     - toolz
 
@@ -36,7 +36,9 @@ test:
     - vega_datasets
     - recommonmark
     - ipython
+    - pip
   commands:
+    - pip check
     - python -m pytest --pyargs --doctest-modules altair
   imports:
     - altair
