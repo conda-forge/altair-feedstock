@@ -1,29 +1,31 @@
+{% set name = "altair" %}
 {% set version = "4.2.0" %}
 
+
 package:
-  name: altair
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/altair-{{ version }}.tar.gz
   sha256: d87d9372e63b48cd96b2a6415f0cf9457f50162ab79dc7a31cd7e024dd840026
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - entrypoints
     - jinja2
-    - jsonschema
+    - jsonschema >=3.0
     - numpy >=0.18
-    - pandas
+    - pandas >=0.18
     - toolz
 
 test:
