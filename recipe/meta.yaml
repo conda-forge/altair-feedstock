@@ -23,7 +23,7 @@ requirements:
     - python >=3.7
     - entrypoints
     - jinja2
-    - jsonschema >=4.17.0
+    - jsonschema >=4.5.0
     - numpy >=0.18
     - pandas >=0.18
     - toolz
