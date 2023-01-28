@@ -1,5 +1,5 @@
 {% set name = "altair" %}
-{% set version = "4.2.0" %}
+{% set version = "4.2.2" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/altair-{{ version }}.tar.gz
-  sha256: d87d9372e63b48cd96b2a6415f0cf9457f50162ab79dc7a31cd7e024dd840026
+  sha256: 39399a267c49b30d102c10411e67ab26374156a84b1aeb9fcd15140429ba49c5
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
