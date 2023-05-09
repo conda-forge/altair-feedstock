@@ -1,11 +1,11 @@
-About altair
-============
+About altair-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/altair-feedstock/blob/main/LICENSE.txt)
 
 Home: http://altair-viz.github.io
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/altair-feedstock/blob/main/LICENSE.txt)
 
 Summary: Altair: A declarative statistical visualization library for Python
 
