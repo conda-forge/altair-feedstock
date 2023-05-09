@@ -1,5 +1,5 @@
 {% set name = "altair" %}
-{% set version = "4.2.2" %}
+{% set version = "5.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/altair-{{ version }}.tar.gz
-  sha256: 39399a267c49b30d102c10411e67ab26374156a84b1aeb9fcd15140429ba49c5
+  sha256: 394c3d8be96f9cc90e15a0eee3634cc5b6f19e470fd2045759892623bd9a3fb2
 
 build:
   number: 0
@@ -19,12 +19,14 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - hatchling
   run:
     - python >=3.7
-    - entrypoints
+    - importlib-metadata
+    - typing-extensions >=4.0.1
     - jinja2
     - jsonschema >=3.0
-    - numpy >=0.18
+    - numpy
     - pandas >=0.18
     - toolz
 
@@ -44,19 +46,9 @@ test:
     - python -m pytest --pyargs --doctest-modules altair
   imports:
     - altair
-    - altair.examples
     - altair.expr
-    - altair.sphinxext
-    - altair.tests
     - altair.utils
-    - altair.vega
-    - altair.vega.v5
-    - altair.vega.v5.schema
     - altair.vegalite
-    - altair.vegalite.v3
-    - altair.vegalite.v3.schema
-    - altair.vegalite.v4
-    - altair.vegalite.v4.schema
 
 about:
   home: http://altair-viz.github.io
