@@ -42,6 +42,7 @@ test:
     - recommonmark
     - ipython
     - pip
+    - anywidget
   commands:
     - pip check
     - python -m pytest --pyargs --doctest-modules altair
