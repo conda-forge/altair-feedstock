@@ -1,5 +1,5 @@
 {% set name = "altair" %}
-{% set version = "5.1.0" %}
+{% set version = "5.1.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/altair-{{ version }}.tar.gz
-  sha256: 46d2b1a9fa29eeed24513262cb1de13a40d55c04580fc21799d5de3991fea8ff
+  sha256: ad6cd6983c8db69a34dd68e42653f6172b7fc3775b7190005107f1b4fc60d64d
 
 build:
   number: 0
@@ -45,8 +45,7 @@ test:
     - anywidget
   commands:
     - pip check
-    # safe to skip, we can enable them again in the next version
-    # - python -m pytest --pyargs --doctest-modules altair
+    - python -m pytest --pyargs --doctest-modules altair
   imports:
     - altair
     - altair.expr
