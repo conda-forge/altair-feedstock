@@ -60,7 +60,7 @@ outputs:
       run:
         - vl-convert-python >=1.1.0
         - pyarrow >=11
-        - vegafusion-python-embed >=1.5.0
+        - vegafusion >=1.5.0
         - {{ pin_subpackage('altair', exact=True) }}
         #   - altair_tiles >=0.3.0
       test:
