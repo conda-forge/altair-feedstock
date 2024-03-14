@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/altair-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
   sha256: 2ad7f0c8010ebbc46319cc30febfb8e59ccf84969a201541c207bc3a4fa6cf81
 
 build:
