@@ -13,11 +13,44 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table>
+    
+  <tr>
+    <td>Azure</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=35&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/altair-feedstock?branchName=main">
-      </a>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=35&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/altair-feedstock?branchName=main">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=35&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/altair-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=35&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/altair-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=35&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/altair-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </td>
   </tr>
 </table>
@@ -28,6 +61,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-altair-green.svg)](https://anaconda.org/conda-forge/altair) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/altair.svg)](https://anaconda.org/conda-forge/altair) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/altair.svg)](https://anaconda.org/conda-forge/altair) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/altair.svg)](https://anaconda.org/conda-forge/altair) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-altair--all-green.svg)](https://anaconda.org/conda-forge/altair-all) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/altair-all.svg)](https://anaconda.org/conda-forge/altair-all) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/altair-all.svg)](https://anaconda.org/conda-forge/altair-all) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/altair-all.svg)](https://anaconda.org/conda-forge/altair-all) |
 
 Installing altair
 =================
@@ -39,16 +73,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `altair` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `altair, altair-all` can be installed with `conda`:
 
 ```
-conda install altair
+conda install altair altair-all
 ```
 
 or with `mamba`:
 
 ```
-mamba install altair
+mamba install altair altair-all
 ```
 
 It is possible to list all of the versions of `altair` available on your platform with `conda`:
@@ -143,6 +177,10 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@binste](https://github.com/binste/)
 * [@ellisonbg](https://github.com/ellisonbg/)
 * [@jakevdp](https://github.com/jakevdp/)
+* [@joelostblom](https://github.com/joelostblom/)
+* [@jonmmease](https://github.com/jonmmease/)
+* [@mattijn](https://github.com/mattijn/)
 
