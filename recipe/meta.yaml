@@ -1,4 +1,4 @@
-{% set name = "altair" %}
+{% set name = "altair-split" %}
 {% set version = "5.2.0" %}
 
 
