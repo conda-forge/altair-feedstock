@@ -1,5 +1,5 @@
-About altair-feedstock
-======================
+About altair-split-feedstock
+============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/altair-feedstock/blob/main/LICENSE.txt)
 
@@ -28,27 +28,28 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-altair-green.svg)](https://anaconda.org/conda-forge/altair) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/altair.svg)](https://anaconda.org/conda-forge/altair) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/altair.svg)](https://anaconda.org/conda-forge/altair) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/altair.svg)](https://anaconda.org/conda-forge/altair) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-altair--all-green.svg)](https://anaconda.org/conda-forge/altair-all) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/altair-all.svg)](https://anaconda.org/conda-forge/altair-all) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/altair-all.svg)](https://anaconda.org/conda-forge/altair-all) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/altair-all.svg)](https://anaconda.org/conda-forge/altair-all) |
 
-Installing altair
-=================
+Installing altair-split
+=======================
 
-Installing `altair` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `altair-split` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `altair` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `altair, altair-all` can be installed with `conda`:
 
 ```
-conda install altair
+conda install altair altair-all
 ```
 
 or with `mamba`:
 
 ```
-mamba install altair
+mamba install altair altair-all
 ```
 
 It is possible to list all of the versions of `altair` available on your platform with `conda`:
@@ -118,17 +119,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating altair-feedstock
-=========================
+Updating altair-split-feedstock
+===============================
 
-If you would like to improve the altair recipe or build a new
+If you would like to improve the altair-split recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/altair-feedstock are
+Note that all branches in the conda-forge/altair-split-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.
@@ -143,6 +144,10 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@binste](https://github.com/binste/)
 * [@ellisonbg](https://github.com/ellisonbg/)
 * [@jakevdp](https://github.com/jakevdp/)
+* [@joelostblom](https://github.com/joelostblom/)
+* [@jonmmease](https://github.com/jonmmease/)
+* [@mattijn](https://github.com/mattijn/)
 
