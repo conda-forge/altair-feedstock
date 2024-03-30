@@ -62,9 +62,9 @@ outputs:
       host:
         - python >=3.8
       run:
-        - vl-convert-python >=1.1.0
+        - vl-convert-python >=1.3.0
         - pyarrow >=11
-        - vegafusion >=1.5.0
+        - vegafusion >=1.6.6
         - vegafusion-python-embed
         - {{ pin_subpackage('altair', exact=True) }}
         - altair_tiles >=0.3.0
