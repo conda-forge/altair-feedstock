@@ -1,5 +1,5 @@
 {% set name = "altair-split" %}
-{% set version = "5.4.0" %}
+{% set version = "5.4.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
-  sha256: 27c69e93d85b7bb3c98fa3626ef7e6bc6939a1466a55a8f8bf68c4bff31cf030
+  sha256: 0ce8c2e66546cb327e5f2d7572ec0e7c6feece816203215613962f0ec1d76a82
 
 build:
   number: 0
