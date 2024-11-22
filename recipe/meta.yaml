@@ -11,7 +11,7 @@ source:
   sha256: 0ce8c2e66546cb327e5f2d7572ec0e7c6feece816203215613962f0ec1d76a82
 
 build:
-  number: 2
+  number: 3
   noarch: python
 
 outputs:
@@ -62,7 +62,7 @@ outputs:
       run:
         - vl-convert-python >=1.6.0
         - pyarrow >=11
-        - vegafusion >=1.6.6, <2
+        - vegafusion >=1.6.6, <1.7
         - vegafusion-python-embed
         - anywidget >=0.9.0
         - {{ pin_subpackage('altair', exact=True) }}
