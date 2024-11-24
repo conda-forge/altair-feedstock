@@ -1,5 +1,5 @@
 {% set name = "altair-split" %}
-{% set version = "5.4.1" %}
+{% set version = "5.5.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/a/altair/altair-{{ version }}.tar.gz
-  sha256: 0ce8c2e66546cb327e5f2d7572ec0e7c6feece816203215613962f0ec1d76a82
+  sha256: d960ebe6178c56de3855a68c47b516be38640b73fb3b5111c2a9ca90546dd73d
 
 build:
-  number: 3
+  number: 0
   noarch: python
 
 outputs:
@@ -21,17 +21,17 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.8, <3.13
+        - python >=3.9
         - pip
         - hatchling
       run:
         - packaging
-        - python >=3.8, <3.13
+        - python >=3.9
         - importlib-metadata
         - typing-extensions >=4.10.0
         - jinja2
         - jsonschema >=3.0
-        - narwhals >=1.1.0
+        - narwhals >=1.14.2
     test:
       source_files:
         - altair
@@ -58,12 +58,11 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.8, <3.13
+        - python >=3.9
       run:
-        - vl-convert-python >=1.6.0
+        - vl-convert-python >=1.7.0
         - pyarrow >=11
-        - vegafusion >=1.6.6, <1.7
-        - vegafusion-python-embed
+        - vegafusion >=2.0.0rc1
         - anywidget >=0.9.0
         - {{ pin_subpackage('altair', exact=True) }}
         - altair_tiles >=0.3.0
