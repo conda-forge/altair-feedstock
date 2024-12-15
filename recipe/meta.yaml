@@ -11,7 +11,7 @@ source:
   sha256: d960ebe6178c56de3855a68c47b516be38640b73fb3b5111c2a9ca90546dd73d
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 outputs:
@@ -21,12 +21,12 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.9
+        - python {{ python_min }}
         - pip
         - hatchling
       run:
         - packaging
-        - python >=3.9
+        - python >={{ python_min }}
         - importlib-metadata
         - typing-extensions >=4.10.0
         - jinja2
@@ -44,6 +44,7 @@ outputs:
         - recommonmark
         - ipython
         - pip
+        - python {{ python_min }}
       commands:
         - pip check
         - python -m pytest --pyargs --doctest-modules altair
@@ -58,7 +59,7 @@ outputs:
       noarch: python
     requirements:
       host:
-        - python >=3.9
+        - python {{ python_min }}
       run:
         - vl-convert-python >=1.7.0
         - pyarrow >=11
@@ -67,6 +68,8 @@ outputs:
         - {{ pin_subpackage('altair', exact=True) }}
         - altair_tiles >=0.3.0
       test:
+        requires:
+          - python {{ python_min }}
         imports:
           - altair
           - vegafusion
