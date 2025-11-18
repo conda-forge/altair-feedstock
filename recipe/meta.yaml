@@ -45,6 +45,7 @@ outputs:
         - pip
         - python {{ python_min }}
         - polars >=0.20.3
+        - pandas >=1.1.3
       commands:
         - pip check
         - python -m pytest --pyargs --doctest-modules altair
