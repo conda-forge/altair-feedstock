@@ -71,6 +71,7 @@ outputs:
       test:
         requires:
           - python {{ python_min }}
+          - polars >=0.20.3
         imports:
           - altair
           - vegafusion
