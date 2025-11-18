@@ -39,12 +39,12 @@ outputs:
         - pytest
         - sphinx
         - docutils
-        - vega_datasets >=0.9.0
         - anywidget >=0.9.0
         - recommonmark
         - ipython
         - pip
         - python {{ python_min }}
+        - polars >=0.20.3
       commands:
         - pip check
         - python -m pytest --pyargs --doctest-modules altair
@@ -71,7 +71,6 @@ outputs:
       test:
         requires:
           - python {{ python_min }}
-          - polars >=0.20.3
         imports:
           - altair
           - vegafusion
