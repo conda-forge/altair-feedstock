@@ -31,7 +31,7 @@ outputs:
         - typing-extensions >=4.12.0
         - jinja2
         - jsonschema >=3.0
-        - narwhals >=1.27.1
+        - narwhals >=2.4.0
     test:
       source_files:
         - altair
