@@ -24,6 +24,7 @@ outputs:
         - python {{ python_min }}
         - pip
         - hatchling
+        - versioningit
       run:
         - packaging
         - python >={{ python_min }}
